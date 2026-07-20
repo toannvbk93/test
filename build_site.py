@@ -11,10 +11,242 @@ NAV_ITEMS = [
     ("company.html", "会社概要"),
     ("greeting.html", "代表者挨拶"),
     ("business.html", "事業内容"),
+    ("it-services.html", "ITサービス"),
     ("for-companies.html", "企業様へ"),
     ("recruitment.html", "採用情報"),
     ("jobs.html", "求人情報"),
     ("news.html", "ニュース"),
+]
+
+IT_SERVICE_PAGES = {
+    "it-services.html",
+    "offshore-development.html",
+    "application-development.html",
+    "migration.html",
+    "maintenance-operations.html",
+    "cloud-computing.html",
+    "ai-genai.html",
+    "erp-crm.html",
+    "cyber-security.html",
+}
+
+IT_SERVICES = [
+    {
+        "slug": "offshore-development",
+        "num": "01",
+        "title": "オフショア開発",
+        "en": "Offshore Development",
+        "summary": "ベトナムの優秀なITエンジニアと日本企業をつなぎ、日本品質×合理コストの開発を実現",
+        "image": "photo-team.jpg",
+        "lead": "ベトナム拠点のエンジニアリング力と、日本側のブリッジ体制を組み合わせ、要件定義からリリース・保守まで一貫して対応します。コミュニケーションロスを抑えつつ、開発スピードとコスト効率を両立します。",
+        "features": [
+            ("ブリッジSE体制", "日本語・ベトナム語・英語での円滑なコミュニケーションと進捗管理"),
+            ("ラボ型／請負型", "専属チームによるラボ開発、または要件固定の請負開発に対応"),
+            ("日本品質の工程管理", "設計レビュー・コードレビュー・テスト・納品基準を日本基準で運用"),
+            ("柔軟なスケール", "プロジェクト規模に応じてチーム規模を拡大・縮小可能"),
+        ],
+        "process": [
+            ("ヒアリング", "課題・予算・スケジュールの整理"),
+            ("提案・見積", "体制・技術・コストのご提案"),
+            ("キックオフ", "チーム編成と開発ルールの合意"),
+            ("開発・検証", "アジャイル／ウォーターフォール対応"),
+            ("納品・運用", "移行支援と継続改善"),
+        ],
+        "benefits": [
+            "優秀なベトナムIT人材を、日本品質の管理体制で活用",
+            "国内開発と比べてコストを抑えつつスピードを確保",
+            "要件の曖昧さにも対応できるブリッジSEサポート",
+        ],
+    },
+    {
+        "slug": "application-development",
+        "num": "02",
+        "title": "アプリケーション開発",
+        "en": "Application Development",
+        "summary": "Web・モバイル・業務システムなど、ビジネス要件に最適化したアプリ開発",
+        "image": "photo-office.jpg",
+        "lead": "新規サービス立ち上げから既存システムの刷新まで、企画・設計・実装・テスト・リリースをワンストップで支援します。モダンな技術スタックと堅実な品質管理で、使いやすく保守しやすいアプリケーションを構築します。",
+        "features": [
+            ("Webアプリケーション", "業務ポータル、SaaS、社内システム、API連携など"),
+            ("モバイルアプリ", "iOS / Android（ネイティブ・クロスプラットフォーム）"),
+            ("業務システム", "受発注・在庫・勤怠・顧客管理などのカスタム開発"),
+            ("UI/UX設計", "現場の業務フローに沿った画面設計と操作性の最適化"),
+        ],
+        "process": [
+            ("要件定義", "業務課題と機能要件の明確化"),
+            ("設計", "アーキテクチャ・画面・データ設計"),
+            ("実装", "アジャイル開発と定期デモ"),
+            ("テスト", "単体・結合・受け入れ試験"),
+            ("リリース", "本番展開と初期サポート"),
+        ],
+        "benefits": [
+            "ビジネス目標に直結する機能設計",
+            "将来の拡張・保守を見据えたアーキテクチャ",
+            "オフショア体制によるコスト効率の高い開発",
+        ],
+    },
+    {
+        "slug": "migration",
+        "num": "03",
+        "title": "移行",
+        "en": "System Migration",
+        "summary": "レガシーシステムからクラウド／新基盤への安全・確実な移行支援",
+        "image": "photo-network.jpg",
+        "lead": "古い基幹システムやオンプレミス環境の刷新、クラウド移行、データ移行まで、ダウンタイムとリスクを最小化しながら段階的に進めます。現状分析から移行計画、リハーサル、本番切替、安定化まで一貫して伴走します。",
+        "features": [
+            ("レガシー刷新", "老朽化した業務システム・基幹系の再構築／リライト"),
+            ("クラウド移行", "オンプレミスからAWS／Azure／GCP等への移行"),
+            ("データ移行", "データクレンジング、マッピング、検証、切替計画"),
+            ("並行稼働支援", "段階移行・ロールバック設計によるリスク低減"),
+        ],
+        "process": [
+            ("現状分析", "資産・依存関係・リスクの棚卸し"),
+            ("移行計画", "方式・スケジュール・切替戦略の策定"),
+            ("構築・検証", "新環境構築と移行リハーサル"),
+            ("本番切替", "計画的なカットオーバー"),
+            ("安定化", "監視・障害対応・最適化"),
+        ],
+        "benefits": [
+            "移行リスクと業務停止時間の最小化",
+            "将来の運用コスト削減と拡張性の向上",
+            "技術負債の解消とセキュリティ強化",
+        ],
+    },
+    {
+        "slug": "maintenance-operations",
+        "num": "04",
+        "title": "保守＆運用支援",
+        "en": "Maintenance & Operations",
+        "summary": "システムの安定稼働を支える、監視・障害対応・改善の継続サポート",
+        "image": "photo-business.jpg",
+        "lead": "開発後も安心してご利用いただけるよう、障害対応、定期メンテナンス、性能改善、小規模改修まで運用チームが継続支援します。SLAに応じた対応体制で、ビジネスの止まらないIT基盤を維持します。",
+        "features": [
+            ("監視・アラート", "可用性・性能・エラーの常時監視と一次対応"),
+            ("障害対応", "原因調査、応急措置、恒久対策まで迅速に対応"),
+            ("定期保守", "パッチ適用、バックアップ確認、脆弱性対応"),
+            ("改善・改修", "運用改善提案と小規模機能追加"),
+        ],
+        "process": [
+            ("引き継ぎ", "システム構成・運用手順の把握"),
+            ("体制設計", "窓口・SLA・エスカレーションの定義"),
+            ("運用開始", "監視・問い合わせ対応の開始"),
+            ("定期報告", "稼働状況と改善提案の共有"),
+            ("継続改善", "コスト最適化と品質向上"),
+        ],
+        "benefits": [
+            "社内ITリソースの負荷軽減",
+            "障害時の迅速な復旧と再発防止",
+            "運用データを活かした継続的な改善",
+        ],
+    },
+    {
+        "slug": "cloud-computing",
+        "num": "05",
+        "title": "クラウドコンピューティング",
+        "en": "Cloud Computing",
+        "summary": "設計・構築・最適化まで、クラウド活用をトータルで支援",
+        "image": "photo-office.jpg",
+        "lead": "クラウドの導入検討からアーキテクチャ設計、構築、コスト最適化、運用までを支援します。セキュリティと可用性を両立したクラウド基盤で、スケーラブルなビジネス成長を支えます。",
+        "features": [
+            ("クラウド設計・構築", "AWS / Azure / GCP を活用した基盤構築"),
+            ("コンテナ／サーバレス", "Docker、Kubernetes、Functions 等の活用"),
+            ("コスト最適化", "利用状況分析とリソース最適化"),
+            ("セキュリティ設計", "IAM、ネットワーク、暗号化、監査ログの整備"),
+        ],
+        "process": [
+            ("アセスメント", "現状課題とクラウド適合性の評価"),
+            ("設計", "構成・セキュリティ・コスト設計"),
+            ("構築", "インフラ／アプリ基盤の実装"),
+            ("移行・展開", "段階的な本番展開"),
+            ("運用最適化", "監視・FinOps・改善"),
+        ],
+        "benefits": [
+            "初期投資を抑えつつ迅速にスケール可能",
+            "可用性と災害対策の強化",
+            "運用自動化による人的負荷の削減",
+        ],
+    },
+    {
+        "slug": "ai-genai",
+        "num": "06",
+        "title": "AI / Gen AI",
+        "en": "AI & Generative AI",
+        "summary": "業務効率化・顧客体験向上に繋がるAI／生成AIソリューションの導入支援",
+        "image": "photo-meeting.jpg",
+        "lead": "チャットボット、文書要約、画像認識、需要予測など、生成AI・機械学習を実務に落とし込みます。PoCから本番導入、ガバナンス整備まで、安全かつ効果的なAI活用を支援します。",
+        "features": [
+            ("生成AI活用", "社内FAQ、文書作成支援、ナレッジ検索、業務自動化"),
+            ("機械学習", "予測・分類・レコメンドなどのモデル構築"),
+            ("LLM連携開発", "API連携、RAG、社内データとの安全な接続"),
+            ("AIガバナンス", "セキュリティ、個人情報、利用ポリシーの整備"),
+        ],
+        "process": [
+            ("ユースケース選定", "効果と実現性の高い課題の特定"),
+            ("PoC", "小規模検証で効果を確認"),
+            ("本開発", "本番品質のシステム化"),
+            ("導入・教育", "現場展開と運用ルール整備"),
+            ("効果測定", "KPIモニタリングと改善"),
+        ],
+        "benefits": [
+            "定型業務の自動化と生産性向上",
+            "顧客対応品質・スピードの改善",
+            "データに基づく意思決定の高度化",
+        ],
+    },
+    {
+        "slug": "erp-crm",
+        "num": "07",
+        "title": "ERP - CRM",
+        "en": "ERP & CRM",
+        "summary": "基幹業務と顧客管理を統合し、経営の可視化と営業生産性を向上",
+        "image": "photo-workplace.jpg",
+        "lead": "ERP／CRMの導入・カスタマイズ・周辺連携・データ移行までを支援します。部門ごとに分断された業務データを統合し、経営判断と現場オペレーションの両方を強化します。",
+        "features": [
+            ("ERP導入・連携", "会計・販売・在庫・生産など基幹業務の統合"),
+            ("CRM構築", "顧客管理、商談管理、マーケティング自動化"),
+            ("カスタマイズ", "業種・業務フローに合わせた機能拡張"),
+            ("データ連携", "既存システム・EC・BIとのシームレス連携"),
+        ],
+        "process": [
+            ("業務分析", "現行フローと課題の可視化"),
+            ("要件定義", "標準機能とカスタム範囲の整理"),
+            ("構築・移行", "設定、開発、データ移行"),
+            ("トレーニング", "現場への定着支援"),
+            ("運用改善", "活用度向上と追加改善"),
+        ],
+        "benefits": [
+            "経営データのリアルタイム可視化",
+            "部門横断の業務効率化",
+            "顧客対応力と売上機会の最大化",
+        ],
+    },
+    {
+        "slug": "cyber-security",
+        "num": "08",
+        "title": "サイバー・セキュリティ",
+        "en": "Cyber Security",
+        "summary": "脅威から情報資産を守る、診断・対策・運用のセキュリティ支援",
+        "image": "photo-network.jpg",
+        "lead": "脆弱性診断、セキュリティ設計、監視、インシデント対応まで、多層防御の考え方で情報資産を保護します。開発段階からのセキュア設計と、運用フェーズの継続的な対策を両立します。",
+        "features": [
+            ("脆弱性診断", "Webアプリ・インフラ・クラウドのセキュリティ診断"),
+            ("セキュア開発", "設計・実装段階でのセキュリティ要件組み込み"),
+            ("監視・防御", "ログ監視、不正検知、アクセス制御の強化"),
+            ("インシデント対応", "初動対応、原因分析、再発防止策の策定"),
+        ],
+        "process": [
+            ("現状評価", "リスクと対策状況のアセスメント"),
+            ("対策設計", "優先度に基づく改善ロードマップ"),
+            ("実装", "技術対策・運用ルールの導入"),
+            ("検証", "診断・ペネトレーションテスト"),
+            ("継続運用", "監視・教育・定期見直し"),
+        ],
+        "benefits": [
+            "情報漏洩・サービス停止リスクの低減",
+            "取引先・顧客からの信頼向上",
+            "コンプライアンス要件への対応強化",
+        ],
+    },
 ]
 
 
@@ -22,7 +254,11 @@ def build_nav_links(active_file: str) -> tuple[str, str]:
     """Build main nav links and contact CTA (single contact entry)."""
     nav_parts = []
     for href, label in NAV_ITEMS:
-        active_attr = " class='active'" if href == active_file else ""
+        if href == "it-services.html":
+            is_active = active_file in IT_SERVICE_PAGES
+        else:
+            is_active = href == active_file
+        active_attr = " class='active'" if is_active else ""
         nav_parts.append(f'          <li><a href="{href}"{active_attr}>{label}</a></li>')
     nav_links = "\n".join(nav_parts)
     cta_active = " active" if active_file == "contact.html" else ""
@@ -50,9 +286,9 @@ FOOTER_HTML = dedent(
         <div class="footer-col">
           <h4>サービス</h4>
           <ul>
+            <li><a href="it-services.html">ITアウトソーシング</a></li>
+            <li><a href="offshore-development.html">オフショア開発</a></li>
             <li><a href="for-companies.html">企業様へ</a></li>
-            <li><a href="jobs.html">求人情報</a></li>
-            <li><a href="recruitment.html">採用情報</a></li>
             <li><a href="contact.html">お問い合わせ</a></li>
           </ul>
         </div>
@@ -348,11 +584,11 @@ def build_home() -> None:
               <p>技術協力・投資・生産分野の国際連携</p>
             </div>
           </a>
-          <a href="business.html" class="service-card reveal" data-delay="6">
-            <img src="images/photo-office.jpg" alt="オフショア開発">
+          <a href="it-services.html" class="service-card reveal" data-delay="6">
+            <img src="images/photo-office.jpg" alt="オフショア開発・ITアウトソーシング">
             <div class="service-card-body">
-              <h3>オフショア開発</h3>
-              <p>日本市場向けIT開発、日本品質×合理コスト、全工程サポート</p>
+              <h3>ITアウトソーシング</h3>
+              <p>オフショア開発、アプリ開発、クラウド、AI、セキュリティなど</p>
             </div>
           </a>
         </div>
@@ -584,9 +820,9 @@ def build_business() -> None:
           <img src="images/photo-workplace.jpg" alt="">
           <div class="biz-field-card-body"><span class="biz-field-num">06</span><h3>衣料品製造・卸売・小売</h3></div>
         </a>
-        <a href="#field-7" class="biz-field-card reveal" data-delay="7">
+        <a href="it-services.html" class="biz-field-card reveal" data-delay="7">
           <img src="images/photo-office.jpg" alt="">
-          <div class="biz-field-card-body"><span class="biz-field-num">07</span><h3>オフショア開発</h3></div>
+          <div class="biz-field-card-body"><span class="biz-field-num">07</span><h3>オフショア開発・ITアウトソーシング</h3></div>
         </a>
       </div>
     </div>
@@ -742,15 +978,16 @@ def build_business() -> None:
     <div class="container biz-split biz-split--reverse">
       <div class="biz-content reveal-right">
         <span class="biz-field-num">07</span>
-        <h2>オフショア開発</h2>
-        <p>ベトナムの優秀なITエンジニアと日本企業をつなぎ、日本市場のニーズに合わせたソフトウェア開発をオフショアで提供しております。</p>
+        <h2>オフショア開発・ITアウトソーシング</h2>
+        <p>ベトナムの優秀なITエンジニアと日本企業をつなぎ、日本市場のニーズに合わせたソフトウェア開発およびITアウトソーシングを提供しております。</p>
         <ul class="biz-feature-list">
-          <li><strong>日本市場向けITプロジェクトの開発</strong> — Webアプリ、業務システム、モバイルアプリなど多様なITプロジェクトに対応</li>
-          <li><strong>日本品質×合理的なコスト</strong> — 品質水準を維持しながらコスト効率の良い開発を実現</li>
-          <li><strong>お客様への最大限のサポート</strong> — 日本語・ベトナム語・英語での丁寧なコミュニケーション</li>
-          <li><strong>開発プロセス全体への参画</strong> — 要件定義から保守・運用まで全工程をサポート</li>
+          <li><strong>オフショア開発</strong> — 日本品質×合理コストで、要件定義から保守まで一貫対応</li>
+          <li><strong>アプリケーション開発</strong> — Web・モバイル・業務システムの設計・実装</li>
+          <li><strong>移行／クラウド／AI</strong> — レガシー刷新、クラウド活用、生成AI導入を支援</li>
+          <li><strong>ERP・CRM／セキュリティ</strong> — 基幹・顧客管理とサイバーセキュリティ対策</li>
         </ul>
         <p>お客様のDX推進・業務効率化・新規サービス創出を力強くサポートいたします。</p>
+        <a href="it-services.html" class="btn btn-primary" style="margin-top:20px;">ITサービスの詳細を見る</a>
       </div>
       <div class="biz-image reveal-left">
         <img src="images/photo-team.jpg" alt="オフショア開発チーム">
@@ -1162,12 +1399,224 @@ def build_contact() -> None:
     write_page("contact.html", "お問い合わせ", "contact.html", body_html)
 
 
+def _it_service_cards_html(exclude_slug=None) -> str:
+    cards = []
+    for i, svc in enumerate(IT_SERVICES, start=1):
+        if exclude_slug and svc["slug"] == exclude_slug:
+            continue
+        cards.append(
+            f"""        <a href="{svc['slug']}.html" class="biz-field-card reveal" data-delay="{(i % 4) + 1}">
+          <img src="images/{svc['image']}" alt="{svc['title']}">
+          <div class="biz-field-card-body">
+            <span class="biz-field-num">{svc['num']}</span>
+            <h3>{svc['title']}</h3>
+            <p>{svc['summary']}</p>
+          </div>
+        </a>"""
+        )
+    return "\n".join(cards)
+
+
+def build_it_services() -> None:
+    cards = _it_service_cards_html()
+    content_html = f"""<section class="hero hero--business">
+  <img src="images/photo-team.jpg" alt="ITアウトソーシング" class="hero-image">
+  <div class="hero-overlay"></div>
+  <div class="hero-content reveal">
+    <span class="hero-badge">IT Outsourcing</span>
+    <h1>ITアウトソーシング</h1>
+    <p>オフショア開発からAI・セキュリティまで、DXをトータル支援</p>
+  </div>
+</section>
+
+<main class="site-main site-main--business">
+
+  <section class="section-block section-about">
+    <div class="container about-split">
+      <div class="about-text reveal-left">
+        <span class="section-label">Overview</span>
+        <h2>日本品質のITを、<br>合理的なコストで</h2>
+        <p>株式会社カタオ総合は、ベトナムの優秀なエンジニアリングリソースと日本側のブリッジ体制を組み合わせ、企業のDX・システム開発・運用課題を解決します。</p>
+        <p>アプリケーション開発、システム移行、クラウド、AI／生成AI、ERP・CRM、サイバーセキュリティまで、要件定義から保守運用までワンストップでご支援します。</p>
+      </div>
+      <div class="about-image reveal-right">
+        <img src="images/photo-office.jpg" alt="ITアウトソーシング概要">
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Services</span>
+        <h2>提供サービス</h2>
+        <p>8つのITサービスで、企画から運用までをトータルサポート</p>
+      </div>
+      <div class="biz-field-grid">
+{cards}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Why Us</span>
+        <h2>選ばれる理由</h2>
+      </div>
+      <div class="biz-point-grid">
+        <div class="biz-point-card reveal" data-delay="1">
+          <h4>POINT 1 – ブリッジSE体制</h4>
+          <p>日本語・ベトナム語・英語での丁寧なコミュニケーションにより、要件の齟齬を最小化します。</p>
+        </div>
+        <div class="biz-point-card reveal" data-delay="2">
+          <h4>POINT 2 – 日本品質×コスト効率</h4>
+          <p>レビュー・テスト・納品基準を日本水準で運用しつつ、オフショアのコストメリットを活かします。</p>
+        </div>
+        <div class="biz-point-card reveal" data-delay="3">
+          <h4>POINT 3 – 一気通貫サポート</h4>
+          <p>開発だけでなく、移行・クラウド・AI・保守運用・セキュリティまで継続的に伴走します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block section-cta-banner">
+    <div class="container cta-inner reveal">
+      <h2>ITアウトソーシングのご相談</h2>
+      <p>貴社の課題に最適なサービスをご提案いたします</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-white">お問い合わせ</a>
+        <a href="business.html" class="btn btn-outline-white">事業内容を見る</a>
+      </div>
+    </div>
+  </section>
+
+</main>"""
+    write_fullwidth_page("it-services.html", "ITアウトソーシング", "it-services.html", content_html)
+
+
+def build_it_service_details() -> None:
+    for svc in IT_SERVICES:
+        features_html = "\n".join(
+            f'          <li><strong>{title}</strong> — {desc}</li>'
+            for title, desc in svc["features"]
+        )
+        process_html = "\n".join(
+            f'        <div class="biz-step reveal" data-delay="{i}"><div class="biz-step-num">{i}</div><h4>{title}</h4><p>{desc}</p></div>'
+            for i, (title, desc) in enumerate(svc["process"], start=1)
+        )
+        benefits_html = "\n".join(
+            f'          <div class="biz-benefit-card reveal" data-delay="{i}"><strong>メリット {i}</strong>{b}</div>'
+            for i, b in enumerate(svc["benefits"], start=1)
+        )
+        related = _it_service_cards_html(exclude_slug=svc["slug"])
+
+        content_html = f"""<section class="hero hero--business">
+  <img src="images/{svc['image']}" alt="{svc['title']}" class="hero-image">
+  <div class="hero-overlay"></div>
+  <div class="hero-content reveal">
+    <span class="hero-badge">{svc['en']}</span>
+    <h1>{svc['title']}</h1>
+    <p>{svc['summary']}</p>
+  </div>
+</section>
+
+<main class="site-main site-main--business">
+
+  <section class="section-block">
+    <div class="container">
+      <nav class="breadcrumb reveal" aria-label="パンくず">
+        <a href="index.html">ホーム</a>
+        <span>/</span>
+        <a href="it-services.html">ITアウトソーシング</a>
+        <span>/</span>
+        <span>{svc['title']}</span>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section-block section-about">
+    <div class="container about-split">
+      <div class="about-text reveal-left">
+        <span class="section-label">{svc['num']} — Detail</span>
+        <h2>{svc['title']}</h2>
+        <p>{svc['lead']}</p>
+        <ul class="biz-feature-list">
+{features_html}
+        </ul>
+      </div>
+      <div class="about-image reveal-right">
+        <img src="images/{svc['image']}" alt="{svc['title']}">
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Process</span>
+        <h2>ご支援の流れ</h2>
+      </div>
+      <div class="biz-steps">
+{process_html}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Benefits</span>
+        <h2>導入メリット</h2>
+      </div>
+      <div class="biz-benefit-grid">
+{benefits_html}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Related Services</span>
+        <h2>関連サービス</h2>
+        <p>あわせてご検討いただけるITサービス</p>
+      </div>
+      <div class="biz-field-grid">
+{related}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block section-cta-banner">
+    <div class="container cta-inner reveal">
+      <h2>{svc['title']}に関するご相談</h2>
+      <p>まずはお気軽にお問い合わせください。課題に合わせたご提案をいたします。</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-white">お問い合わせ</a>
+        <a href="it-services.html" class="btn btn-outline-white">サービス一覧へ</a>
+      </div>
+    </div>
+  </section>
+
+</main>"""
+        write_fullwidth_page(
+            f"{svc['slug']}.html",
+            svc["title"],
+            f"{svc['slug']}.html",
+            content_html,
+        )
+
+
 def main() -> None:
     print("Generating kataosogo-site pages...")
     build_home()
     build_company()
     build_greeting()
     build_business()
+    build_it_services()
+    build_it_service_details()
     build_for_companies()
     build_recruitment()
     build_jobs()
