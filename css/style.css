@@ -631,6 +631,15 @@ article p, .section p { margin-bottom: 16px; color: var(--text); }
   border-radius: 2px;
 }
 .contact-page > p { color: var(--muted); margin-bottom: 8px; }
+.contact-form-embed {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+.contact-form-embed iframe {
+  max-width: 100%;
+  border: 0;
+}
 .contact-info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

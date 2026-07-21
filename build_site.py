@@ -1383,16 +1383,17 @@ def build_contact() -> None:
     body_html = """
     <article class="section contact-page">
       <h1>お問い合わせ</h1>
-      <p>ご質問・ご相談は、下記の連絡先までお気軽にお問い合わせください。</p>
-      <div class="contact-info">
-        <div class="contact-card reveal">
-          <span class="contact-label">電話番号</span>
-          <a href="tel:0363362753" class="contact-value">03-6336-2753</a>
-        </div>
-        <div class="contact-card reveal" data-delay="1">
-          <span class="contact-label">メールアドレス</span>
-          <a href="mailto:kataosogo.info@gmail.com" class="contact-value">kataosogo.info@gmail.com</a>
-        </div>
+      <div class="contact-form-embed">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSewFLz8l4xR8TXqAK_gY-Bl-48kcv4PWnbDzju2Lo9W5EwYnQ/viewform?embedded=true"
+          width="640"
+          height="800"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          title="お問い合わせフォーム">
+          処理中...
+        </iframe>
       </div>
     </article>
     """
