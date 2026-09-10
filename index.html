@@ -1,9 +1,9 @@
         <!DOCTYPE html>
-        <html lang="ja">
+        <html lang="ja" data-page-title="page.home">
         <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <meta name="description" content="株式会社カタオ総合 — ベトナムと日本をつなぐ外国人人材紹介・登録支援機関">
+          <meta name="description" content="株式会社カタオ総合 — ベトナムと日本をつなぐ外国人人材紹介・登録支援機関" data-i18n-content="meta.homeDesc">
           <title>ホーム | 株式会社カタオ総合</title>
           <link rel="stylesheet" href="css/style.css">
         </head>
@@ -12,7 +12,7 @@
             <div class="loader-spinner"></div>
             <img src="images/logo.png" alt="" class="loader-logo">
             <div class="loader-bar"><div class="loader-bar-fill"></div></div>
-            <p class="loader-text">読み込み中...</p>
+            <p class="loader-text" data-i18n="loader.text">読み込み中...</p>
           </div>
           <div class="page-transition"></div>
           <div class="scroll-progress"></div>
@@ -23,19 +23,24 @@
                 <img src="images/logo.png" alt="株式会社カタオ総合 ロゴ">
                 <span>株式会社カタオ総合</span>
               </a>
-              <button class="nav-toggle" aria-label="メニュー">☰</button>
-              <nav class="main-nav" aria-label="メインナビゲーション">
+              <button class="nav-toggle" data-i18n-aria="nav.menu" aria-label="メニュー">☰</button>
+              <nav class="main-nav" data-i18n-aria="nav.main" aria-label="メインナビゲーション">
                 <ul>
-                  <li><a href="index.html" class='active'>ホーム</a></li>
-          <li><a href="company.html">会社概要</a></li>
-          <li><a href="greeting.html">代表者挨拶</a></li>
-          <li><a href="business.html">事業内容</a></li>
-          <li><a href="it-services.html">ITサービス</a></li>
-          <li><a href="for-companies.html">企業様へ</a></li>
-          <li><a href="recruitment.html">採用情報</a></li>
-          <li><a href="jobs.html">求人情報</a></li>
-          <li><a href="news.html">ニュース</a></li>
-                          <li class="nav-cta"><a href="contact.html" class="btn-nav">お問い合わせ</a></li>
+                  <li><a href="index.html" class='active' data-i18n="nav.home">ホーム</a></li>
+          <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
+          <li><a href="greeting.html" data-i18n="nav.greeting">代表者挨拶</a></li>
+          <li><a href="business.html" data-i18n="nav.business">事業内容</a></li>
+          <li><a href="it-services.html" data-i18n="nav.it">ITサービス</a></li>
+          <li><a href="for-companies.html" data-i18n="nav.forCompanies">企業様へ</a></li>
+          <li><a href="recruitment.html" data-i18n="nav.recruitment">採用情報</a></li>
+          <li><a href="jobs.html" data-i18n="nav.jobs">求人情報</a></li>
+          <li><a href="news.html" data-i18n="nav.news">ニュース</a></li>
+                          <li class="nav-cta"><a href="contact.html" class="btn-nav" data-i18n="nav.contact">お問い合わせ</a></li>
+                  <li class="nav-lang">                <div class="lang-switch" role="group" data-i18n-aria="lang.label" aria-label="言語">
+                  <button type="button" class="lang-btn is-active" data-lang="ja" aria-pressed="true">日本語</button>
+                  <button type="button" class="lang-btn" data-lang="vi" aria-pressed="false">VI</button>
+                </div>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -44,12 +49,12 @@
   <img src="images/photo-office.jpg" alt="日本・ベトナムをつなぐ架け橋" class="hero-image">
   <div class="hero-overlay"></div>
   <div class="hero-content reveal">
-    <span class="hero-badge">外国人人材紹介事業</span>
-    <h1>機会を繋ぐ・未来を築く</h1>
-    <p>ベトナムと日本をつなぐ信頼のパートナー — 人材紹介から定着支援までワンストップ</p>
+    <span class="hero-badge" data-i18n="home.badge">外国人人材紹介事業</span>
+    <h1 data-i18n="home.heroTitle">機会を繋ぐ・未来を築く</h1>
+    <p data-i18n="home.heroLead">ベトナムと日本をつなぐ信頼のパートナー — 人材紹介から定着支援までワンストップ</p>
     <div class="hero-actions">
-      <a href="for-companies.html" class="btn btn-primary">企業様はこちら</a>
-      <a href="contact.html" class="btn btn-outline">お問い合わせ</a>
+      <a href="for-companies.html" class="btn btn-primary" data-i18n="home.ctaCompanies">企業様はこちら</a>
+      <a href="contact.html" class="btn btn-outline" data-i18n="home.ctaContact">お問い合わせ</a>
     </div>
   </div>
 </section>
@@ -59,10 +64,10 @@
   <div class="container about-split">
     <div class="about-text reveal-left">
       <span class="section-label">About Us</span>
-      <h2>日本とベトナムをつなぐ<br>総合人材サービス</h2>
-      <p>株式会社カタオ総合は、革新的なソリューションを提供し、お客様の信頼に応えることを使命としています。ベトナムをはじめとする海外の教育機関・団体との強固なネットワークを活かし、日本語能力・専門スキル・勤労意識に優れた人材を厳選・育成し、日本企業へ紹介しております。</p>
-      <p>「信頼」「誠実」「挑戦」を企業理念とし、社会に貢献できる企業であり続けます。</p>
-      <a href="company.html" class="btn btn-primary">会社概要を見る</a>
+      <h2 data-i18n-html="home.aboutTitle">日本とベトナムをつなぐ<br>総合人材サービス</h2>
+      <p data-i18n="home.aboutP1">株式会社カタオ総合は、革新的なソリューションを提供し、お客様の信頼に応えることを使命としています。ベトナムをはじめとする海外の教育機関・団体との強固なネットワークを活かし、日本語能力・専門スキル・勤労意識に優れた人材を厳選・育成し、日本企業へ紹介しております。</p>
+      <p data-i18n="home.aboutP2">「信頼」「誠実」「挑戦」を企業理念とし、社会に貢献できる企業であり続けます。</p>
+      <a href="company.html" class="btn btn-primary" data-i18n="home.aboutCta">会社概要を見る</a>
     </div>
     <div class="about-image reveal-right">
       <img src="images/photo-network.jpg" alt="国際人材紹介サービス">
@@ -73,10 +78,10 @@
 <!-- Stats -->
 <section class="section-block section-stats">
   <div class="container stats-bar">
-    <div class="stat reveal" data-delay="1"><span class="stat-num">2023</span><span class="stat-label">設立年</span></div>
-    <div class="stat reveal" data-delay="2"><span class="stat-num">16</span><span class="stat-label">特定技能業種</span></div>
-    <div class="stat reveal" data-delay="3"><span class="stat-num">7+</span><span class="stat-label">事業分野</span></div>
-    <div class="stat reveal" data-delay="4"><span class="stat-num">100%</span><span class="stat-label">ワンストップ支援</span></div>
+    <div class="stat reveal" data-delay="1"><span class="stat-num">2023</span><span class="stat-label" data-i18n="home.stat1">設立年</span></div>
+    <div class="stat reveal" data-delay="2"><span class="stat-num">16</span><span class="stat-label" data-i18n="home.stat2">特定技能業種</span></div>
+    <div class="stat reveal" data-delay="3"><span class="stat-num">7+</span><span class="stat-label" data-i18n="home.stat3">事業分野</span></div>
+    <div class="stat reveal" data-delay="4"><span class="stat-num">100%</span><span class="stat-label" data-i18n="home.stat4">ワンストップ支援</span></div>
   </div>
 </section>
 
@@ -85,55 +90,57 @@
   <div class="container">
     <div class="section-header reveal">
       <span class="section-label">Services</span>
-      <h2>事業内容</h2>
-      <p>人材紹介から生活支援、教育コンサルティングまで幅広く対応</p>
+      <h2 data-i18n="home.servicesTitle">事業内容</h2>
+      <p data-i18n="home.servicesLead">人材紹介からIT・建設DXまで、事業を幅広く展開</p>
     </div>
     <div class="services-grid">
-      <a href="business.html" class="service-card reveal" data-delay="1">
-        <img src="images/photo-workplace.jpg" alt="技能実習・特定技能">
+      <a href="jobs.html" class="service-card service-card--live reveal" data-delay="1">
+        <img src="images/photo-team.jpg" alt="求人情報サイト">
         <div class="service-card-body">
-          <h3>技能実習・特定技能</h3>
-          <p>育成・送出し、16業種対応の登録支援機関サービス</p>
+          <span class="service-badge service-badge--live" data-i18n="home.jobsBadge">公開中</span>
+          <h3 data-i18n="home.jobsTitle">求人サービス</h3>
+          <p data-i18n="home.jobsDesc">求職者と企業をつなぐ求人情報サイト。地域・給与での検索、履歴書からの求人提案、応募状況の確認まで。</p>
         </div>
       </a>
       <a href="business.html" class="service-card reveal" data-delay="2">
-        <img src="images/photo-team.jpg" alt="高度人材紹介">
+        <img src="images/photo-workplace.jpg" alt="技能実習・特定技能">
         <div class="service-card-body">
-          <h3>高度人材紹介</h3>
-          <p>技術・人文知識・国際業務ビザ対応</p>
+          <h3 data-i18n="home.svc1Title">技能実習・特定技能</h3>
+          <p data-i18n="home.svc1Desc">育成・送出し、16業種対応の登録支援機関サービス</p>
         </div>
       </a>
       <a href="business.html" class="service-card reveal" data-delay="3">
-        <img src="images/photo-business.jpg" alt="生活・就業支援">
+        <img src="images/photo-team.jpg" alt="高度人材紹介">
         <div class="service-card-body">
-          <h3>生活・就業支援</h3>
-          <p>ビザ、住居、日本語、定着支援のトータルサポート</p>
+          <h3 data-i18n="home.svc2Title">高度人材紹介</h3>
+          <p data-i18n="home.svc2Desc">技術・人文知識・国際業務ビザ対応</p>
         </div>
       </a>
       <a href="business.html" class="service-card reveal" data-delay="4">
-        <img src="images/photo-meeting.jpg" alt="通訳・翻訳・研修">
+        <img src="images/photo-business.jpg" alt="生活・就業支援">
         <div class="service-card-body">
-          <h3>通訳・翻訳・研修</h3>
-          <p>言語サービスと教育コンサルティング</p>
+          <h3 data-i18n="home.svc3Title">生活・就業支援</h3>
+          <p data-i18n="home.svc3Desc">ビザ、住居、日本語、定着支援のトータルサポート</p>
         </div>
       </a>
       <a href="business.html" class="service-card reveal" data-delay="5">
-        <img src="images/photo-network.jpg" alt="日越連携支援">
+        <img src="images/photo-meeting.jpg" alt="通訳・翻訳・研修">
         <div class="service-card-body">
-          <h3>日越連携支援</h3>
-          <p>技術協力・投資・生産分野の国際連携</p>
+          <h3 data-i18n="home.svc4Title">通訳・翻訳・研修</h3>
+          <p data-i18n="home.svc4Desc">言語サービスと教育コンサルティング</p>
         </div>
       </a>
       <a href="it-services.html" class="service-card reveal" data-delay="6">
         <img src="images/photo-office.jpg" alt="オフショア開発・ITアウトソーシング">
         <div class="service-card-body">
-          <h3>ITアウトソーシング</h3>
-          <p>オフショア開発、アプリ開発、クラウド、AI、セキュリティなど</p>
+          <h3 data-i18n="home.svc6Title">ITアウトソーシング</h3>
+          <p data-i18n="home.svc6Desc">オフショア開発、アプリ開発、クラウド、AI、セキュリティなど</p>
         </div>
       </a>
     </div>
-    <div class="section-cta reveal">
-      <a href="business.html" class="btn btn-primary">事業内容の詳細を見る</a>
+    <div class="section-cta reveal" style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
+      <a href="jobs.html" class="btn btn-secondary" data-i18n="home.jobsFind">求人を探す</a>
+      <a href="business.html" class="btn btn-primary" data-i18n="home.servicesCta">事業内容の詳細を見る</a>
     </div>
   </div>
 </section>
@@ -143,23 +150,23 @@
   <div class="container">
     <div class="section-header reveal">
       <span class="section-label">Why KATAO</span>
-      <h2>カタオ総合が選ばれる理由</h2>
+      <h2 data-i18n="home.whyTitle">カタオ総合が選ばれる理由</h2>
     </div>
     <div class="why-grid">
       <div class="why-card reveal" data-delay="1">
         <div class="why-icon">01</div>
-        <h3>ワンストップ対応</h3>
-        <p>人材選定から採用、入国後の生活・職場定着支援まで一貫したサービス</p>
+        <h3 data-i18n="home.why1Title">ワンストップ対応</h3>
+        <p data-i18n="home.why1Desc">人材選定から採用、入国後の生活・職場定着支援まで一貫したサービス</p>
       </div>
       <div class="why-card reveal" data-delay="2">
         <div class="why-icon">02</div>
-        <h3>ベトナム語サポート</h3>
-        <p>面接・生活指導・日常相談すべてベトナム語で対応可能</p>
+        <h3 data-i18n="home.why2Title">ベトナム語サポート</h3>
+        <p data-i18n="home.why2Desc">面接・生活指導・日常相談すべてベトナム語で対応可能</p>
       </div>
       <div class="why-card reveal" data-delay="3">
         <div class="why-icon">03</div>
-        <h3>法的手続き代行</h3>
-        <p>在留資格、ビザ発給、入国サポートまで全て代行</p>
+        <h3 data-i18n="home.why3Title">法的手続き代行</h3>
+        <p data-i18n="home.why3Desc">在留資格、ビザ発給、入国サポートまで全て代行</p>
       </div>
     </div>
   </div>
@@ -170,15 +177,15 @@
   <div class="container">
     <div class="section-header reveal">
       <span class="section-label">Process</span>
-      <h2>採用の流れ</h2>
-      <p>人材募集から就業開始まで5ステップで完全サポート</p>
+      <h2 data-i18n="home.processTitle">採用の流れ</h2>
+      <p data-i18n="home.processLead">人材募集から就業開始まで5ステップで完全サポート</p>
     </div>
     <div class="steps">
-      <div class="step reveal" data-delay="1"><div class="step-num">1</div><h4>人材募集・紹介</h4><p>ご要望をお伺いし最適な人材をご提案</p></div>
-      <div class="step reveal" data-delay="2"><div class="step-num">2</div><h4>面接対応</h4><p>母国語スタッフが同行サポート</p></div>
-      <div class="step reveal" data-delay="3"><div class="step-num">3</div><h4>内定・書類申請</h4><p>ビザ申請などトータルサポート</p></div>
-      <div class="step reveal" data-delay="4"><div class="step-num">4</div><h4>入国準備</h4><p>生活環境整備を万全に</p></div>
-      <div class="step reveal" data-delay="5"><div class="step-num">5</div><h4>就業開始</h4><p>定期的フォローアップ</p></div>
+      <div class="step reveal" data-delay="1"><div class="step-num">1</div><h4 data-i18n="home.step1Title">人材募集・紹介</h4><p data-i18n="home.step1Desc">ご要望をお伺いし最適な人材をご提案</p></div>
+      <div class="step reveal" data-delay="2"><div class="step-num">2</div><h4 data-i18n="home.step2Title">面接対応</h4><p data-i18n="home.step2Desc">母国語スタッフが同行サポート</p></div>
+      <div class="step reveal" data-delay="3"><div class="step-num">3</div><h4 data-i18n="home.step3Title">内定・書類申請</h4><p data-i18n="home.step3Desc">ビザ申請などトータルサポート</p></div>
+      <div class="step reveal" data-delay="4"><div class="step-num">4</div><h4 data-i18n="home.step4Title">入国準備</h4><p data-i18n="home.step4Desc">生活環境整備を万全に</p></div>
+      <div class="step reveal" data-delay="5"><div class="step-num">5</div><h4 data-i18n="home.step5Title">就業開始</h4><p data-i18n="home.step5Desc">定期的フォローアップ</p></div>
     </div>
   </div>
 </section>
@@ -186,11 +193,11 @@
 <!-- CTA -->
 <section class="section-block section-cta-banner">
   <div class="container cta-inner reveal">
-    <h2>まずはお気軽にご相談ください</h2>
-    <p>貴社の人材課題に最適なソリューションをご提案いたします</p>
+    <h2 data-i18n="home.ctaTitle">まずはお気軽にご相談ください</h2>
+    <p data-i18n="home.ctaLead">貴社の人材課題に最適なソリューションをご提案いたします</p>
     <div class="hero-actions">
-      <a href="contact.html" class="btn btn-white">お問い合わせ</a>
-      <a href="for-companies.html" class="btn btn-outline-white">企業様向け情報</a>
+      <a href="contact.html" class="btn btn-white" data-i18n="home.ctaContact">お問い合わせ</a>
+      <a href="for-companies.html" class="btn btn-outline-white" data-i18n="home.ctaForCompanies">企業様向け情報</a>
     </div>
   </div>
 </section>
@@ -200,28 +207,29 @@
     <div class="footer-brand">
       <img src="images/logo.png" alt="KATAO" class="footer-logo">
       <p><strong>株式会社カタオ総合</strong></p>
-      <p class="footer-tagline">機会を繋ぐ・未来を築く</p>
+      <p class="footer-tagline" data-i18n="footer.tagline">機会を繋ぐ・未来を築く</p>
     </div>
     <div class="footer-col">
-      <h4>会社情報</h4>
+      <h4 data-i18n="footer.company">会社情報</h4>
       <ul>
-        <li><a href="company.html">会社概要</a></li>
-        <li><a href="greeting.html">代表者挨拶</a></li>
-        <li><a href="business.html">事業内容</a></li>
-        <li><a href="news.html">ニュース</a></li>
+        <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
+        <li><a href="greeting.html" data-i18n="nav.greeting">代表者挨拶</a></li>
+        <li><a href="business.html" data-i18n="nav.business">事業内容</a></li>
+        <li><a href="jobs.html" data-i18n="nav.jobs">求人情報</a></li>
+        <li><a href="news.html" data-i18n="nav.news">ニュース</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>サービス</h4>
+      <h4 data-i18n="footer.services">サービス</h4>
       <ul>
-        <li><a href="it-services.html">ITアウトソーシング</a></li>
-        <li><a href="offshore-development.html">オフショア開発</a></li>
-        <li><a href="for-companies.html">企業様へ</a></li>
-        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="it-services.html" data-i18n="footer.it">ITアウトソーシング</a></li>
+        <li><a href="offshore-development.html" data-i18n="footer.offshore">オフショア開発</a></li>
+        <li><a href="for-companies.html" data-i18n="footer.forCompanies">企業様へ</a></li>
+        <li><a href="contact.html" data-i18n="footer.contactLink">お問い合わせ</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>お問い合わせ</h4>
+      <h4 data-i18n="footer.contact">お問い合わせ</h4>
       <address>〒123-0861<br>東京都足立区加賀１－７－５</address>
       <p>TEL: <a href="tel:0363362753">03-6336-2753</a></p>
       <p>Email: <a href="mailto:kataosogo.info@gmail.com">kataosogo.info@gmail.com</a></p>
@@ -229,12 +237,14 @@
   </div>
   <div class="footer-bottom">
     <div class="container">
-      <p>© 2026 株式会社カタオ総合 All Rights Reserved.</p>
+      <p data-i18n="footer.copy">© 2026 株式会社カタオ総合 All Rights Reserved.</p>
     </div>
   </div>
 </footer>
 
-          <button class="back-to-top" aria-label="トップへ戻る">↑</button>
+          <button class="back-to-top" data-i18n-aria="backToTop" aria-label="トップへ戻る">↑</button>
+          <script src="js/i18n-dict.js"></script>
           <script src="js/main.js"></script>
+          <script src="js/i18n.js"></script>
         </body>
         </html>

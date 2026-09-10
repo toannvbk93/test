@@ -1,5 +1,5 @@
         <!DOCTYPE html>
-        <html lang="ja">
+        <html lang="ja" data-page-title="page.jobs">
         <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
             <div class="loader-spinner"></div>
             <img src="images/logo.png" alt="" class="loader-logo">
             <div class="loader-bar"><div class="loader-bar-fill"></div></div>
-            <p class="loader-text">読み込み中...</p>
+            <p class="loader-text" data-i18n="loader.text">読み込み中...</p>
           </div>
           <div class="page-transition"></div>
           <div class="scroll-progress"></div>
@@ -22,19 +22,24 @@
                 <img src="images/logo.png" alt="株式会社カタオ総合 ロゴ">
                 <span>株式会社カタオ総合</span>
               </a>
-              <button class="nav-toggle" aria-label="メニュー">☰</button>
-              <nav class="main-nav" aria-label="メインナビゲーション">
+              <button class="nav-toggle" data-i18n-aria="nav.menu" aria-label="メニュー">☰</button>
+              <nav class="main-nav" data-i18n-aria="nav.main" aria-label="メインナビゲーション">
                 <ul>
-                  <li><a href="index.html">ホーム</a></li>
-          <li><a href="company.html">会社概要</a></li>
-          <li><a href="greeting.html">代表者挨拶</a></li>
-          <li><a href="business.html">事業内容</a></li>
-          <li><a href="it-services.html">ITサービス</a></li>
-          <li><a href="for-companies.html">企業様へ</a></li>
-          <li><a href="recruitment.html">採用情報</a></li>
-          <li><a href="jobs.html" class='active'>求人情報</a></li>
-          <li><a href="news.html">ニュース</a></li>
-                          <li class="nav-cta"><a href="contact.html" class="btn-nav">お問い合わせ</a></li>
+                  <li><a href="index.html" data-i18n="nav.home">ホーム</a></li>
+          <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
+          <li><a href="greeting.html" data-i18n="nav.greeting">代表者挨拶</a></li>
+          <li><a href="business.html" data-i18n="nav.business">事業内容</a></li>
+          <li><a href="it-services.html" data-i18n="nav.it">ITサービス</a></li>
+          <li><a href="for-companies.html" data-i18n="nav.forCompanies">企業様へ</a></li>
+          <li><a href="recruitment.html" data-i18n="nav.recruitment">採用情報</a></li>
+          <li><a href="jobs.html" class='active' data-i18n="nav.jobs">求人情報</a></li>
+          <li><a href="news.html" data-i18n="nav.news">ニュース</a></li>
+                          <li class="nav-cta"><a href="contact.html" class="btn-nav" data-i18n="nav.contact">お問い合わせ</a></li>
+                  <li class="nav-lang">                <div class="lang-switch" role="group" data-i18n-aria="lang.label" aria-label="言語">
+                  <button type="button" class="lang-btn is-active" data-lang="ja" aria-pressed="true">日本語</button>
+                  <button type="button" class="lang-btn" data-lang="vi" aria-pressed="false">VI</button>
+                </div>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -42,8 +47,8 @@
 <section class="hero hero--compact">
   <div class="hero-overlay"></div>
   <div class="hero-content reveal">
-    <h1>求人情報</h1>
-    <p>Job Openings</p>
+    <h1 data-i18n="jobs.heroTitle">求人情報</h1>
+    <p data-i18n="jobs.heroSub">Job Openings</p>
   </div>
 </section>
 
@@ -51,12 +56,18 @@
             <div class="container">
         <article class="section">
   <div class="job-card">
-    <h2>技術・人文知識・国際業務ビザ人材（Engineer / Specialist）</h2>
-    <p>専門知識と実務経験を活かし、日本企業での中長期的なキャリア形成を目指す方向けの求人カテゴリです。</p>
+    <span class="service-badge service-badge--live" data-i18n="home.jobsBadge">公開中</span>
+    <h2 data-i18n="jobs.siteTitle">求人情報サイト</h2>
+    <p data-i18n="jobs.siteDesc">株式会社カタオ総合の求人サービスです。求職者と企業をつなぎ、地域・給与での検索、履歴書からの求人提案、応募状況の確認までを一つのサイトで提供します。特定技能・技術人文知識国際業務など、日本で働く方向けの求人を掲載しています。</p>
+    <p style="margin-top:16px;"><a href="https://jobs.kataosogo.jp/" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-i18n="jobs.openSite">求人サイトを開く</a></p>
   </div>
   <div class="job-card">
-    <h2>特定技能者（Specified Skilled Worker）</h2>
-    <p>特定技能制度の対象分野で、即戦力として活躍したい方向けの求人カテゴリです。</p>
+    <h2 data-i18n="jobs.engTitle">技術・人文知識・国際業務ビザ人材（Engineer / Specialist）</h2>
+    <p data-i18n="jobs.engDesc">専門知識と実務経験を活かし、日本企業での中長期的なキャリア形成を目指す方向けの求人カテゴリです。</p>
+  </div>
+  <div class="job-card">
+    <h2 data-i18n="jobs.sswTitle">特定技能者（Specified Skilled Worker）</h2>
+    <p data-i18n="jobs.sswDesc">特定技能制度の対象分野で、即戦力として活躍したい方向けの求人カテゴリです。</p>
   </div>
 </article>
             </div>
@@ -66,28 +77,29 @@
     <div class="footer-brand">
       <img src="images/logo.png" alt="KATAO" class="footer-logo">
       <p><strong>株式会社カタオ総合</strong></p>
-      <p class="footer-tagline">機会を繋ぐ・未来を築く</p>
+      <p class="footer-tagline" data-i18n="footer.tagline">機会を繋ぐ・未来を築く</p>
     </div>
     <div class="footer-col">
-      <h4>会社情報</h4>
+      <h4 data-i18n="footer.company">会社情報</h4>
       <ul>
-        <li><a href="company.html">会社概要</a></li>
-        <li><a href="greeting.html">代表者挨拶</a></li>
-        <li><a href="business.html">事業内容</a></li>
-        <li><a href="news.html">ニュース</a></li>
+        <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
+        <li><a href="greeting.html" data-i18n="nav.greeting">代表者挨拶</a></li>
+        <li><a href="business.html" data-i18n="nav.business">事業内容</a></li>
+        <li><a href="jobs.html" data-i18n="nav.jobs">求人情報</a></li>
+        <li><a href="news.html" data-i18n="nav.news">ニュース</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>サービス</h4>
+      <h4 data-i18n="footer.services">サービス</h4>
       <ul>
-        <li><a href="it-services.html">ITアウトソーシング</a></li>
-        <li><a href="offshore-development.html">オフショア開発</a></li>
-        <li><a href="for-companies.html">企業様へ</a></li>
-        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="it-services.html" data-i18n="footer.it">ITアウトソーシング</a></li>
+        <li><a href="offshore-development.html" data-i18n="footer.offshore">オフショア開発</a></li>
+        <li><a href="for-companies.html" data-i18n="footer.forCompanies">企業様へ</a></li>
+        <li><a href="contact.html" data-i18n="footer.contactLink">お問い合わせ</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>お問い合わせ</h4>
+      <h4 data-i18n="footer.contact">お問い合わせ</h4>
       <address>〒123-0861<br>東京都足立区加賀１－７－５</address>
       <p>TEL: <a href="tel:0363362753">03-6336-2753</a></p>
       <p>Email: <a href="mailto:kataosogo.info@gmail.com">kataosogo.info@gmail.com</a></p>
@@ -95,12 +107,14 @@
   </div>
   <div class="footer-bottom">
     <div class="container">
-      <p>© 2026 株式会社カタオ総合 All Rights Reserved.</p>
+      <p data-i18n="footer.copy">© 2026 株式会社カタオ総合 All Rights Reserved.</p>
     </div>
   </div>
 </footer>
 
-          <button class="back-to-top" aria-label="トップへ戻る">↑</button>
+          <button class="back-to-top" data-i18n-aria="backToTop" aria-label="トップへ戻る">↑</button>
+          <script src="js/i18n-dict.js"></script>
           <script src="js/main.js"></script>
+          <script src="js/i18n.js"></script>
         </body>
         </html>

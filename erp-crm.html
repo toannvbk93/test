@@ -1,5 +1,5 @@
         <!DOCTYPE html>
-        <html lang="ja">
+        <html lang="ja" data-page-title="page.erp-crm">
         <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
             <div class="loader-spinner"></div>
             <img src="images/logo.png" alt="" class="loader-logo">
             <div class="loader-bar"><div class="loader-bar-fill"></div></div>
-            <p class="loader-text">読み込み中...</p>
+            <p class="loader-text" data-i18n="loader.text">読み込み中...</p>
           </div>
           <div class="page-transition"></div>
           <div class="scroll-progress"></div>
@@ -22,19 +22,24 @@
                 <img src="images/logo.png" alt="株式会社カタオ総合 ロゴ">
                 <span>株式会社カタオ総合</span>
               </a>
-              <button class="nav-toggle" aria-label="メニュー">☰</button>
-              <nav class="main-nav" aria-label="メインナビゲーション">
+              <button class="nav-toggle" data-i18n-aria="nav.menu" aria-label="メニュー">☰</button>
+              <nav class="main-nav" data-i18n-aria="nav.main" aria-label="メインナビゲーション">
                 <ul>
-                  <li><a href="index.html">ホーム</a></li>
-          <li><a href="company.html">会社概要</a></li>
-          <li><a href="greeting.html">代表者挨拶</a></li>
-          <li><a href="business.html">事業内容</a></li>
-          <li><a href="it-services.html" class='active'>ITサービス</a></li>
-          <li><a href="for-companies.html">企業様へ</a></li>
-          <li><a href="recruitment.html">採用情報</a></li>
-          <li><a href="jobs.html">求人情報</a></li>
-          <li><a href="news.html">ニュース</a></li>
-                          <li class="nav-cta"><a href="contact.html" class="btn-nav">お問い合わせ</a></li>
+                  <li><a href="index.html" data-i18n="nav.home">ホーム</a></li>
+          <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
+          <li><a href="greeting.html" data-i18n="nav.greeting">代表者挨拶</a></li>
+          <li><a href="business.html" data-i18n="nav.business">事業内容</a></li>
+          <li><a href="it-services.html" class='active' data-i18n="nav.it">ITサービス</a></li>
+          <li><a href="for-companies.html" data-i18n="nav.forCompanies">企業様へ</a></li>
+          <li><a href="recruitment.html" data-i18n="nav.recruitment">採用情報</a></li>
+          <li><a href="jobs.html" data-i18n="nav.jobs">求人情報</a></li>
+          <li><a href="news.html" data-i18n="nav.news">ニュース</a></li>
+                          <li class="nav-cta"><a href="contact.html" class="btn-nav" data-i18n="nav.contact">お問い合わせ</a></li>
+                  <li class="nav-lang">                <div class="lang-switch" role="group" data-i18n-aria="lang.label" aria-label="言語">
+                  <button type="button" class="lang-btn is-active" data-lang="ja" aria-pressed="true">日本語</button>
+                  <button type="button" class="lang-btn" data-lang="vi" aria-pressed="false">VI</button>
+                </div>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -44,8 +49,8 @@
   <div class="hero-overlay"></div>
   <div class="hero-content reveal">
     <span class="hero-badge">ERP & CRM</span>
-    <h1>ERP - CRM</h1>
-    <p>基幹業務と顧客管理を統合し、経営の可視化と営業生産性を向上</p>
+    <h1 data-i18n="itSvc.erp-crm.title">ERP - CRM</h1>
+    <p data-i18n="itSvc.erp-crm.summary">基幹業務と顧客管理を統合し、経営の可視化と営業生産性を向上</p>
   </div>
 </section>
 
@@ -53,12 +58,12 @@
 
   <section class="section-block">
     <div class="container">
-      <nav class="breadcrumb reveal" aria-label="パンくず">
-        <a href="index.html">ホーム</a>
+      <nav class="breadcrumb reveal" data-i18n-aria="it.detail.breadcrumbAria" aria-label="パンくず">
+        <a href="index.html" data-i18n="nav.home">ホーム</a>
         <span>/</span>
-        <a href="it-services.html">ITアウトソーシング</a>
+        <a href="it-services.html" data-i18n="it.heroTitle">ITアウトソーシング</a>
         <span>/</span>
-        <span>ERP - CRM</span>
+        <span data-i18n="itSvc.erp-crm.title">ERP - CRM</span>
       </nav>
     </div>
   </section>
@@ -67,13 +72,13 @@
     <div class="container about-split">
       <div class="about-text reveal-left">
         <span class="section-label">07 — Detail</span>
-        <h2>ERP - CRM</h2>
-        <p>ERP／CRMの導入・カスタマイズ・周辺連携・データ移行までを支援します。部門ごとに分断された業務データを統合し、経営判断と現場オペレーションの両方を強化します。</p>
+        <h2 data-i18n="itSvc.erp-crm.title">ERP - CRM</h2>
+        <p data-i18n="itSvc.erp-crm.lead">ERP／CRMの導入・カスタマイズ・周辺連携・データ移行までを支援します。部門ごとに分断された業務データを統合し、経営判断と現場オペレーションの両方を強化します。</p>
         <ul class="biz-feature-list">
-          <li><strong>ERP導入・連携</strong> — 会計・販売・在庫・生産など基幹業務の統合</li>
-          <li><strong>CRM構築</strong> — 顧客管理、商談管理、マーケティング自動化</li>
-          <li><strong>カスタマイズ</strong> — 業種・業務フローに合わせた機能拡張</li>
-          <li><strong>データ連携</strong> — 既存システム・EC・BIとのシームレス連携</li>
+          <li><strong data-i18n="itSvc.erp-crm.feat1Title">ERP導入・連携</strong> — <span data-i18n="itSvc.erp-crm.feat1Desc">会計・販売・在庫・生産など基幹業務の統合</span></li>
+          <li><strong data-i18n="itSvc.erp-crm.feat2Title">CRM構築</strong> — <span data-i18n="itSvc.erp-crm.feat2Desc">顧客管理、商談管理、マーケティング自動化</span></li>
+          <li><strong data-i18n="itSvc.erp-crm.feat3Title">カスタマイズ</strong> — <span data-i18n="itSvc.erp-crm.feat3Desc">業種・業務フローに合わせた機能拡張</span></li>
+          <li><strong data-i18n="itSvc.erp-crm.feat4Title">データ連携</strong> — <span data-i18n="itSvc.erp-crm.feat4Desc">既存システム・EC・BIとのシームレス連携</span></li>
         </ul>
       </div>
       <div class="about-image reveal-right">
@@ -86,14 +91,14 @@
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">Process</span>
-        <h2>ご支援の流れ</h2>
+        <h2 data-i18n="it.detail.processTitle">ご支援の流れ</h2>
       </div>
       <div class="biz-steps">
-        <div class="biz-step reveal" data-delay="1"><div class="biz-step-num">1</div><h4>業務分析</h4><p>現行フローと課題の可視化</p></div>
-        <div class="biz-step reveal" data-delay="2"><div class="biz-step-num">2</div><h4>要件定義</h4><p>標準機能とカスタム範囲の整理</p></div>
-        <div class="biz-step reveal" data-delay="3"><div class="biz-step-num">3</div><h4>構築・移行</h4><p>設定、開発、データ移行</p></div>
-        <div class="biz-step reveal" data-delay="4"><div class="biz-step-num">4</div><h4>トレーニング</h4><p>現場への定着支援</p></div>
-        <div class="biz-step reveal" data-delay="5"><div class="biz-step-num">5</div><h4>運用改善</h4><p>活用度向上と追加改善</p></div>
+        <div class="biz-step reveal" data-delay="1"><div class="biz-step-num">1</div><h4 data-i18n="itSvc.erp-crm.proc1Title">業務分析</h4><p data-i18n="itSvc.erp-crm.proc1Desc">現行フローと課題の可視化</p></div>
+        <div class="biz-step reveal" data-delay="2"><div class="biz-step-num">2</div><h4 data-i18n="itSvc.erp-crm.proc2Title">要件定義</h4><p data-i18n="itSvc.erp-crm.proc2Desc">標準機能とカスタム範囲の整理</p></div>
+        <div class="biz-step reveal" data-delay="3"><div class="biz-step-num">3</div><h4 data-i18n="itSvc.erp-crm.proc3Title">構築・移行</h4><p data-i18n="itSvc.erp-crm.proc3Desc">設定、開発、データ移行</p></div>
+        <div class="biz-step reveal" data-delay="4"><div class="biz-step-num">4</div><h4 data-i18n="itSvc.erp-crm.proc4Title">トレーニング</h4><p data-i18n="itSvc.erp-crm.proc4Desc">現場への定着支援</p></div>
+        <div class="biz-step reveal" data-delay="5"><div class="biz-step-num">5</div><h4 data-i18n="itSvc.erp-crm.proc5Title">運用改善</h4><p data-i18n="itSvc.erp-crm.proc5Desc">活用度向上と追加改善</p></div>
       </div>
     </div>
   </section>
@@ -102,12 +107,12 @@
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">Benefits</span>
-        <h2>導入メリット</h2>
+        <h2 data-i18n="it.detail.benefitsTitle">導入メリット</h2>
       </div>
       <div class="biz-benefit-grid">
-          <div class="biz-benefit-card reveal" data-delay="1"><strong>メリット 1</strong>経営データのリアルタイム可視化</div>
-          <div class="biz-benefit-card reveal" data-delay="2"><strong>メリット 2</strong>部門横断の業務効率化</div>
-          <div class="biz-benefit-card reveal" data-delay="3"><strong>メリット 3</strong>顧客対応力と売上機会の最大化</div>
+          <div class="biz-benefit-card reveal" data-delay="1"><strong data-i18n="it.detail.merit1">メリット 1</strong><span data-i18n="itSvc.erp-crm.benefit1">経営データのリアルタイム可視化</span></div>
+          <div class="biz-benefit-card reveal" data-delay="2"><strong data-i18n="it.detail.merit2">メリット 2</strong><span data-i18n="itSvc.erp-crm.benefit2">部門横断の業務効率化</span></div>
+          <div class="biz-benefit-card reveal" data-delay="3"><strong data-i18n="it.detail.merit3">メリット 3</strong><span data-i18n="itSvc.erp-crm.benefit3">顧客対応力と売上機会の最大化</span></div>
       </div>
     </div>
   </section>
@@ -116,64 +121,64 @@
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">Related Services</span>
-        <h2>関連サービス</h2>
-        <p>あわせてご検討いただけるITサービス</p>
+        <h2 data-i18n="it.detail.relatedTitle">関連サービス</h2>
+        <p data-i18n="it.detail.relatedLead">あわせてご検討いただけるITサービス</p>
       </div>
       <div class="biz-field-grid">
         <a href="offshore-development.html" class="biz-field-card reveal" data-delay="2">
           <img src="images/photo-team.jpg" alt="オフショア開発">
           <div class="biz-field-card-body">
             <span class="biz-field-num">01</span>
-            <h3>オフショア開発</h3>
-            <p>ベトナムの優秀なITエンジニアと日本企業をつなぎ、日本品質×合理コストの開発を実現</p>
+            <h3 data-i18n="itSvc.offshore-development.title">オフショア開発</h3>
+            <p data-i18n="itSvc.offshore-development.summary">ベトナムの優秀なITエンジニアと日本企業をつなぎ、日本品質×合理コストの開発を実現</p>
           </div>
         </a>
         <a href="application-development.html" class="biz-field-card reveal" data-delay="3">
           <img src="images/photo-office.jpg" alt="アプリケーション開発">
           <div class="biz-field-card-body">
             <span class="biz-field-num">02</span>
-            <h3>アプリケーション開発</h3>
-            <p>Web・モバイル・業務システムなど、ビジネス要件に最適化したアプリ開発</p>
+            <h3 data-i18n="itSvc.application-development.title">アプリケーション開発</h3>
+            <p data-i18n="itSvc.application-development.summary">Web・モバイル・業務システムなど、ビジネス要件に最適化したアプリ開発</p>
           </div>
         </a>
         <a href="migration.html" class="biz-field-card reveal" data-delay="4">
           <img src="images/photo-network.jpg" alt="移行">
           <div class="biz-field-card-body">
             <span class="biz-field-num">03</span>
-            <h3>移行</h3>
-            <p>レガシーシステムからクラウド／新基盤への安全・確実な移行支援</p>
+            <h3 data-i18n="itSvc.migration.title">移行</h3>
+            <p data-i18n="itSvc.migration.summary">レガシーシステムからクラウド／新基盤への安全・確実な移行支援</p>
           </div>
         </a>
         <a href="maintenance-operations.html" class="biz-field-card reveal" data-delay="1">
           <img src="images/photo-business.jpg" alt="保守＆運用支援">
           <div class="biz-field-card-body">
             <span class="biz-field-num">04</span>
-            <h3>保守＆運用支援</h3>
-            <p>システムの安定稼働を支える、監視・障害対応・改善の継続サポート</p>
+            <h3 data-i18n="itSvc.maintenance-operations.title">保守＆運用支援</h3>
+            <p data-i18n="itSvc.maintenance-operations.summary">システムの安定稼働を支える、監視・障害対応・改善の継続サポート</p>
           </div>
         </a>
         <a href="cloud-computing.html" class="biz-field-card reveal" data-delay="2">
           <img src="images/photo-office.jpg" alt="クラウドコンピューティング">
           <div class="biz-field-card-body">
             <span class="biz-field-num">05</span>
-            <h3>クラウドコンピューティング</h3>
-            <p>設計・構築・最適化まで、クラウド活用をトータルで支援</p>
+            <h3 data-i18n="itSvc.cloud-computing.title">クラウドコンピューティング</h3>
+            <p data-i18n="itSvc.cloud-computing.summary">設計・構築・最適化まで、クラウド活用をトータルで支援</p>
           </div>
         </a>
         <a href="ai-genai.html" class="biz-field-card reveal" data-delay="3">
           <img src="images/photo-meeting.jpg" alt="AI / Gen AI">
           <div class="biz-field-card-body">
             <span class="biz-field-num">06</span>
-            <h3>AI / Gen AI</h3>
-            <p>業務効率化・顧客体験向上に繋がるAI／生成AIソリューションの導入支援</p>
+            <h3 data-i18n="itSvc.ai-genai.title">AI / Gen AI</h3>
+            <p data-i18n="itSvc.ai-genai.summary">業務効率化・顧客体験向上に繋がるAI／生成AIソリューションの導入支援</p>
           </div>
         </a>
         <a href="cyber-security.html" class="biz-field-card reveal" data-delay="1">
           <img src="images/photo-network.jpg" alt="サイバー・セキュリティ">
           <div class="biz-field-card-body">
             <span class="biz-field-num">08</span>
-            <h3>サイバー・セキュリティ</h3>
-            <p>脅威から情報資産を守る、診断・対策・運用のセキュリティ支援</p>
+            <h3 data-i18n="itSvc.cyber-security.title">サイバー・セキュリティ</h3>
+            <p data-i18n="itSvc.cyber-security.summary">脅威から情報資産を守る、診断・対策・運用のセキュリティ支援</p>
           </div>
         </a>
       </div>
@@ -182,11 +187,11 @@
 
   <section class="section-block section-cta-banner">
     <div class="container cta-inner reveal">
-      <h2>ERP - CRMに関するご相談</h2>
-      <p>まずはお気軽にお問い合わせください。課題に合わせたご提案をいたします。</p>
+      <h2 data-i18n="itSvc.erp-crm.ctaTitle">ERP - CRMに関するご相談</h2>
+      <p data-i18n="it.detail.ctaLead">まずはお気軽にお問い合わせください。課題に合わせたご提案をいたします。</p>
       <div class="hero-actions">
-        <a href="contact.html" class="btn btn-white">お問い合わせ</a>
-        <a href="it-services.html" class="btn btn-outline-white">サービス一覧へ</a>
+        <a href="contact.html" class="btn btn-white" data-i18n="it.detail.ctaContact">お問い合わせ</a>
+        <a href="it-services.html" class="btn btn-outline-white" data-i18n="it.detail.ctaList">サービス一覧へ</a>
       </div>
     </div>
   </section>
@@ -197,28 +202,29 @@
     <div class="footer-brand">
       <img src="images/logo.png" alt="KATAO" class="footer-logo">
       <p><strong>株式会社カタオ総合</strong></p>
-      <p class="footer-tagline">機会を繋ぐ・未来を築く</p>
+      <p class="footer-tagline" data-i18n="footer.tagline">機会を繋ぐ・未来を築く</p>
     </div>
     <div class="footer-col">
-      <h4>会社情報</h4>
+      <h4 data-i18n="footer.company">会社情報</h4>
       <ul>
-        <li><a href="company.html">会社概要</a></li>
-        <li><a href="greeting.html">代表者挨拶</a></li>
-        <li><a href="business.html">事業内容</a></li>
-        <li><a href="news.html">ニュース</a></li>
+        <li><a href="company.html" data-i18n="nav.company">会社概要</a></li>
+        <li><a href="greeting.html" data-i18n="nav.greeting">代表者挨拶</a></li>
+        <li><a href="business.html" data-i18n="nav.business">事業内容</a></li>
+        <li><a href="jobs.html" data-i18n="nav.jobs">求人情報</a></li>
+        <li><a href="news.html" data-i18n="nav.news">ニュース</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>サービス</h4>
+      <h4 data-i18n="footer.services">サービス</h4>
       <ul>
-        <li><a href="it-services.html">ITアウトソーシング</a></li>
-        <li><a href="offshore-development.html">オフショア開発</a></li>
-        <li><a href="for-companies.html">企業様へ</a></li>
-        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="it-services.html" data-i18n="footer.it">ITアウトソーシング</a></li>
+        <li><a href="offshore-development.html" data-i18n="footer.offshore">オフショア開発</a></li>
+        <li><a href="for-companies.html" data-i18n="footer.forCompanies">企業様へ</a></li>
+        <li><a href="contact.html" data-i18n="footer.contactLink">お問い合わせ</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>お問い合わせ</h4>
+      <h4 data-i18n="footer.contact">お問い合わせ</h4>
       <address>〒123-0861<br>東京都足立区加賀１－７－５</address>
       <p>TEL: <a href="tel:0363362753">03-6336-2753</a></p>
       <p>Email: <a href="mailto:kataosogo.info@gmail.com">kataosogo.info@gmail.com</a></p>
@@ -226,12 +232,14 @@
   </div>
   <div class="footer-bottom">
     <div class="container">
-      <p>© 2026 株式会社カタオ総合 All Rights Reserved.</p>
+      <p data-i18n="footer.copy">© 2026 株式会社カタオ総合 All Rights Reserved.</p>
     </div>
   </div>
 </footer>
 
-          <button class="back-to-top" aria-label="トップへ戻る">↑</button>
+          <button class="back-to-top" data-i18n-aria="backToTop" aria-label="トップへ戻る">↑</button>
+          <script src="js/i18n-dict.js"></script>
           <script src="js/main.js"></script>
+          <script src="js/i18n.js"></script>
         </body>
         </html>
